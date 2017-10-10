@@ -565,19 +565,6 @@ namespace QuanLyThuVien
 
         #endregion
 
-<<<<<<< HEAD
-
-        private void tabControl_Selected(object sender, TabControlEventArgs e)
-        {
-            InitializeTabControl();
-        }
-        //sua ti
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-
-        }
-=======
->>>>>>> 66d516eb1cc76634582ad4ffbf45b50abb9737a5
     }
 
 }

@@ -26,31 +26,6 @@ E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\o
 E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
 E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
 E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
-<<<<<<< HEAD
-E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
-E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
-E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
-C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
-C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
-C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
-<<<<<<< HEAD
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
-D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
-=======
-E:\forgithub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
-E:\forgithub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
-E:\forgithub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
-C:\Users\FPTShop\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
-C:\Users\FPTShop\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
-C:\Users\FPTShop\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
-=======
->>>>>>> 66d516eb1cc76634582ad4ffbf45b50abb9737a5
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
@@ -63,10 +38,5 @@ C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVi
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
-<<<<<<< HEAD
->>>>>>> eeca3b193593e3c8b2a9179175d7ed0ae855c757
->>>>>>> 9be0ca2f33cd8b5b00c86868c4064fe2b805276a
-=======
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
 C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
->>>>>>> 66d516eb1cc76634582ad4ffbf45b50abb9737a5
