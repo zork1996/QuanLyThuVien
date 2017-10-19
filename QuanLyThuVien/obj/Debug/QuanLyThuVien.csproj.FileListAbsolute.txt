@@ -1,0 +1,31 @@
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.dll
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.xml
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+E:\LAP TRINH\VISUAL STUDIO 2015\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.dll
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.xml
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuvien.csprojResolveAssemblyReference.cache
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuvien.csproj.GenerateResource.Cache
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
