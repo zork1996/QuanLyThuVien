@@ -41,6 +41,191 @@ namespace QuanLyThuVien
             }
         }
 
+
+        #region Book Manage
+
+        private void LoadBookData()
+        {
+            dgvBook.DataSource = (new BookF()).Books.ToList();
+        }
+
+        private void btnBookAdd_Click(object sender, EventArgs e)
+        {
+            string title = txtBookTitle.Text;
+            string author = txtBookAuthor.Text;
+            string publisher = txtBookPublisher.Text;
+            int quantity = Int32.Parse(txtBookQuantity.Text);
+
+            #region Check Book Information
+
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Please enter book's title", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(author))
+            {
+                MessageBox.Show("Please enter book's author", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(publisher))
+            {
+                MessageBox.Show("Please enter book's publisher", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (quantity < 0)
+            {
+                MessageBox.Show("Quantity is not valid", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            #endregion
+
+            Book model = new Book();
+
+            model.Title = title;
+            model.Author = author;
+            model.Publisher = publisher;
+            model.Quantity = quantity;
+
+            if ((new BookF()).Insert(model))
+            {
+                MessageBox.Show("Added successfully", "", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Added failed", "", MessageBoxButtons.OK);
+            }
+
+            LoadBookData();
+
+        }
+
+        private void btnBookUpdate_Click(object sender, EventArgs e)
+        {
+            int id = Int32.Parse(txtBookId.Text);
+            string title = txtBookTitle.Text;
+            string author = txtBookAuthor.Text;
+            string publisher = txtBookPublisher.Text;
+            int quantity = Int32.Parse(txtBookQuantity.Text);
+
+            #region Check Book Information
+
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Please enter book's title", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(author))
+            {
+                MessageBox.Show("Please enter book's author", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(publisher))
+            {
+                MessageBox.Show("Please enter book's publisher", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (quantity < 0)
+            {
+                MessageBox.Show("Quantity is not valid", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            #endregion
+
+            if ((new BookF()).Exists(id) == false)
+            {
+                MessageBox.Show("Book is not exists", "", MessageBoxButtons.OK);
+                return;
+            }
+
+            Book model = new Book();
+
+            model.Title = title;
+            model.Author = author;
+            model.Publisher = publisher;
+            model.Quantity = quantity;
+
+            if ((new BookF()).Update(id, model) == true)
+            {
+                MessageBox.Show("Update successfully", "", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Update failed", "", MessageBoxButtons.OK);
+            }
+
+            LoadBookData();
+
+        }
+
+        private void btnBookDelete_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtBookId.Text);
+
+            if ((new BookF()).Exists(id) == false)
+            {
+                MessageBox.Show("Book is not exists", "", MessageBoxButtons.OK);
+                return;
+            }
+
+            if ((new BookF()).Delete(id) == true)
+            {
+                MessageBox.Show("Delete successfully", "", MessageBoxButtons.OK);
+            }
+
+            LoadBookData();
+
+        }
+
+        private void dgvBook_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtBookId.Text = dgvBook.CurrentRow.Cells[0].Value.ToString();
+            txtBookTitle.Text = dgvBook.CurrentRow.Cells[1].Value.ToString();
+            txtBookAuthor.Text = dgvBook.CurrentRow.Cells[2].Value.ToString();
+            txtBookPublisher.Text = dgvBook.CurrentRow.Cells[3].Value.ToString();
+            txtBookQuantity.Text = dgvBook.CurrentRow.Cells[4].Value.ToString();
+        }
+
+        private void SearchBook(string type, string value)
+        {
+            if (type == "ID")
+                dgvBook.DataSource = (new BookF()).Books.Where(x => x.ID.ToString().Contains(value)).ToList();
+
+            if (type == "Title")
+                dgvBook.DataSource = (new BookF()).Books.Where(x => x.Title.Contains(value)).ToList();
+
+            if (type == "Author")
+                dgvBook.DataSource = (new BookF()).Books.Where(x => x.Author.Contains(value)).ToList();
+
+            if (type == "Publisher")
+                dgvBook.DataSource = (new BookF()).Books.Where(x => x.Publisher.Contains(value)).ToList();
+
+            if (type == "Quantity")
+                dgvBook.DataSource = (new BookF()).Books.Where(x => x.Quantity.ToString().Contains(value)).ToList();
+        }
+
+        private void txtBookSearchValue_TextChanged(object sender, EventArgs e)
+        {
+            SearchBook(cbBookSearchBy.SelectedItem.ToString(), txtBookSearchValue.Text);
+        }
+
+        private void cbBookSearchBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SearchBook(cbBookSearchBy.SelectedItem.ToString(), txtBookSearchValue.Text);
+        }
+
+        #endregion
+
+
+
         #region Reader Manage
 
         private void LoadReaderData()
