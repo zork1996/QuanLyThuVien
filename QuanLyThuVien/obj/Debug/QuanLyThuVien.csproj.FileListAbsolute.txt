@@ -32,3 +32,6 @@ E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\QuanLyThuVien\QuanLyThuVien\obj\Debug\Qua
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
 C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
