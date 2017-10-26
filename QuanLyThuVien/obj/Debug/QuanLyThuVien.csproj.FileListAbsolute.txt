@@ -35,3 +35,8 @@ C:\Users\Rob Luccy\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLy
 D:\GITHUB\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
 D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
 D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+D:\GITHUB\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
