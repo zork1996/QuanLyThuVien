@@ -1,5 +1,6 @@
 ﻿using QuanLyThuVien.Entities;
 using QuanLyThuVien.Functions;
+using QuanLyThuVien.Functions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-   
+
 namespace QuanLyThuVien
 {
     public partial class frmMain : Form
@@ -25,7 +26,7 @@ namespace QuanLyThuVien
             if (tabControl.SelectedTab == tabBook)
             {
                 cbBookSearchBy.SelectedIndex = 0;
-                //LoadBookData();
+                LoadBookData();
             }
 
             if (tabControl.SelectedTab == tabReader)
@@ -37,10 +38,14 @@ namespace QuanLyThuVien
             if (tabControl.SelectedTab == tabVoucher)
             {
                 cbVoucherSearchBy.SelectedIndex = 0;
-                //LoadVoucherData();
+                LoadVoucherData();
             }
         }
 
+        private void tabControl_Selected(object sender, TabControlEventArgs e)
+        {
+            InitializeTabControl();
+        }
 
         #region Book Manage
 
@@ -223,8 +228,6 @@ namespace QuanLyThuVien
         }
 
         #endregion
-
-
 
         #region Reader Manage
 
@@ -411,11 +414,11 @@ namespace QuanLyThuVien
         {
             LibraryManagementEntities db = new LibraryManagementEntities();
             dgvVoucher.DataSource = (from v in db.Vouchers
-                                     join b in db.Books
-                                     on v.BookID equals b.ID
-                                     join r in db.Readers
-                                     on v.ReaderID equals r.ID
-                                     select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+                      join b in db.Books
+                      on v.BookID equals b.ID
+                      join r in db.Readers
+                      on v.ReaderID equals r.ID
+                      select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
         }
 
         private void btnVoucherAdd_Click(object sender, EventArgs e)
@@ -506,48 +509,48 @@ namespace QuanLyThuVien
 
             if (type == "Voucher ID")
                 dgvVoucher.DataSource = (from v in db.Vouchers
-                                         join b in db.Books
-                                         on v.BookID equals b.ID
-                                         join r in db.Readers
-                                         on v.ReaderID equals r.ID
-                                         where v.ID.ToString().Contains(value)
-                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+                                        join b in db.Books
+                                        on v.BookID equals b.ID
+                                        join r in db.Readers
+                                        on v.ReaderID equals r.ID
+                                        where v.ID.ToString().Contains(value)
+                                        select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
 
             if (type == "Book Title")
                 dgvVoucher.DataSource = (from v in db.Vouchers
-                                         join b in db.Books
-                                         on v.BookID equals b.ID
-                                         join r in db.Readers
-                                         on v.ReaderID equals r.ID
-                                         where b.Title.Contains(value)
-                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+                                        join b in db.Books
+                                        on v.BookID equals b.ID
+                                        join r in db.Readers
+                                        on v.ReaderID equals r.ID
+                                        where b.Title.Contains(value)
+                                        select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
 
             if (type == "Reader")
                 dgvVoucher.DataSource = (from v in db.Vouchers
-                                         join b in db.Books
-                                         on v.BookID equals b.ID
-                                         join r in db.Readers
-                                         on v.ReaderID equals r.ID
-                                         where r.Name.Contains(value)
-                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+                                        join b in db.Books
+                                        on v.BookID equals b.ID
+                                        join r in db.Readers
+                                        on v.ReaderID equals r.ID
+                                        where r.Name.Contains(value)
+                                        select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
 
             if (type == "Quantity")
                 dgvVoucher.DataSource = (from v in db.Vouchers
-                                         join b in db.Books
-                                         on v.BookID equals b.ID
-                                         join r in db.Readers
-                                         on v.ReaderID equals r.ID
-                                         where v.Quantity.ToString().Contains(value)
-                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+                                        join b in db.Books
+                                        on v.BookID equals b.ID
+                                        join r in db.Readers
+                                        on v.ReaderID equals r.ID
+                                        where v.Quantity.ToString().Contains(value)
+                                        select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
 
             if (type == "Date")
                 dgvVoucher.DataSource = (from v in db.Vouchers
-                                         join b in db.Books
-                                         on v.BookID equals b.ID
-                                         join r in db.Readers
-                                         on v.ReaderID equals r.ID
-                                         where v.Date.ToString().Contains(value)
-                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+                                        join b in db.Books
+                                        on v.BookID equals b.ID
+                                        join r in db.Readers
+                                        on v.ReaderID equals r.ID
+                                        where v.Date.ToString().Contains(value)
+                                        select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
         }
 
         private void cbVoucherSearchBy_SelectedIndexChanged(object sender, EventArgs e)
@@ -561,12 +564,6 @@ namespace QuanLyThuVien
         }
 
         #endregion
-
-
-        private void tabControl_Selected(object sender, TabControlEventArgs e)
-        {
-            InitializeTabControl();
-        }
 
     }
 
