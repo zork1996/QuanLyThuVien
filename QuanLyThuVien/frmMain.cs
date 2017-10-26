@@ -405,6 +405,164 @@ namespace QuanLyThuVien
 
         #endregion
 
+        #region Voucher Manage
+
+        private void LoadVoucherData()
+        {
+            LibraryManagementEntities db = new LibraryManagementEntities();
+            dgvVoucher.DataSource = (from v in db.Vouchers
+                                     join b in db.Books
+                                     on v.BookID equals b.ID
+                                     join r in db.Readers
+                                     on v.ReaderID equals r.ID
+                                     select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+        }
+
+        private void btnVoucherAdd_Click(object sender, EventArgs e)
+        {
+            int bookId = Int32.Parse(txtVoucherBookId.Text);
+            int readerId = Int32.Parse(txtVoucherReaderId.Text);
+            int quantity = Int32.Parse(txtVoucherQuantity.Text);
+            DateTime date = dateVoucherDate.Value;
+
+            #region Check Voucher Information
+
+            if ((new BookF()).Exists(bookId) == false)
+            {
+                MessageBox.Show("Book is not exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if ((new ReaderF()).Exists(readerId) == false)
+            {
+                MessageBox.Show("Reader is not exists", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (quantity <= 0 || quantity > (new BookF()).Books.Where(x => x.ID == bookId).FirstOrDefault().Quantity)
+            {
+                MessageBox.Show("Not valid quantity", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Voucher model = new Voucher();
+
+            model.BookID = bookId;
+            model.ReaderID = readerId;
+            model.Quantity = quantity;
+            model.Date = date;
+
+            if ((new VoucherF()).Insert(model))
+            {
+                MessageBox.Show("Added successfully", "", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Added failed", "", MessageBoxButtons.OK);
+            }
+
+            LoadVoucherData();
+
+            #endregion
+
+        }
+
+        private void btnVoucherDelete_Click(object sender, EventArgs e)
+        {
+            int voucherId = Int32.Parse(txtVoucherId.Text);
+
+            if ((new VoucherF()).Exists(voucherId) == false)
+            {
+                MessageBox.Show("Voucher is not exists", "", MessageBoxButtons.OK);
+                return;
+            }
+
+            if ((new VoucherF()).Delete(voucherId) == true)
+            {
+                MessageBox.Show("Delete successfully", "", MessageBoxButtons.OK);
+            }
+
+            LoadVoucherData();
+        }
+
+        private void dgvVoucher_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int voucherId = Int32.Parse(dgvVoucher.CurrentRow.Cells[0].Value.ToString());
+
+            Voucher voucherEntry = (new VoucherF()).Vouchers.Where(x => x.ID == voucherId).FirstOrDefault();
+            Book bookEntry = (new BookF()).Books.Where(x => x.ID == voucherEntry.BookID).FirstOrDefault();
+            Reader readerEntry = (new ReaderF()).Readers.Where(x => x.ID == voucherEntry.ReaderID).FirstOrDefault();
+
+            txtVoucherId.Text = voucherId.ToString();
+            txtVoucherBookId.Text = bookEntry.ID.ToString();
+            txtVoucherReaderId.Text = readerEntry.ID.ToString();
+            txtVoucherQuantity.Text = voucherEntry.Quantity.ToString();
+            dateVoucherDate.Value = (DateTime)voucherEntry.Date;
+        }
+
+        private void SearchVoucher(string type, string value)
+        {
+            LibraryManagementEntities db = new LibraryManagementEntities();
+
+            if (type == "Voucher ID")
+                dgvVoucher.DataSource = (from v in db.Vouchers
+                                         join b in db.Books
+                                         on v.BookID equals b.ID
+                                         join r in db.Readers
+                                         on v.ReaderID equals r.ID
+                                         where v.ID.ToString().Contains(value)
+                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+
+            if (type == "Book Title")
+                dgvVoucher.DataSource = (from v in db.Vouchers
+                                         join b in db.Books
+                                         on v.BookID equals b.ID
+                                         join r in db.Readers
+                                         on v.ReaderID equals r.ID
+                                         where b.Title.Contains(value)
+                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+
+            if (type == "Reader")
+                dgvVoucher.DataSource = (from v in db.Vouchers
+                                         join b in db.Books
+                                         on v.BookID equals b.ID
+                                         join r in db.Readers
+                                         on v.ReaderID equals r.ID
+                                         where r.Name.Contains(value)
+                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+
+            if (type == "Quantity")
+                dgvVoucher.DataSource = (from v in db.Vouchers
+                                         join b in db.Books
+                                         on v.BookID equals b.ID
+                                         join r in db.Readers
+                                         on v.ReaderID equals r.ID
+                                         where v.Quantity.ToString().Contains(value)
+                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+
+            if (type == "Date")
+                dgvVoucher.DataSource = (from v in db.Vouchers
+                                         join b in db.Books
+                                         on v.BookID equals b.ID
+                                         join r in db.Readers
+                                         on v.ReaderID equals r.ID
+                                         where v.Date.ToString().Contains(value)
+                                         select new { v.ID, BookTitle = b.Title, ReaderName = r.Name, v.Quantity, v.Date }).ToList();
+        }
+
+        private void cbVoucherSearchBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SearchVoucher(cbVoucherSearchBy.SelectedItem.ToString(), txtVoucherSearchValue.Text);
+        }
+
+        private void txtVoucherSearchValue_TextChanged(object sender, EventArgs e)
+        {
+            SearchVoucher(cbVoucherSearchBy.SelectedItem.ToString(), txtVoucherSearchValue.Text);
+        }
+
+        #endregion
+
+
         private void tabControl_Selected(object sender, TabControlEventArgs e)
         {
             InitializeTabControl();
