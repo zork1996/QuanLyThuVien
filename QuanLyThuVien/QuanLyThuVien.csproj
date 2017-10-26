@@ -77,6 +77,7 @@
     <Compile Include="Functions\BookF.cs" />
     <Compile Include="Functions\LoginF.cs" />
     <Compile Include="Functions\ReaderF.cs" />
+    <Compile Include="Functions\VoucherF.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmLogin.resx">
