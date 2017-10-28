@@ -106,7 +106,63 @@ namespace QuanLyThuVien
 
         private void btnBookUpdate_Click(object sender, EventArgs e)
         {
-            
+            int id = Int32.Parse(txtBookId.Text);
+            string title = txtBookTitle.Text;
+            string author = txtBookAuthor.Text;
+            string publisher = txtBookPublisher.Text;
+            int quantity = Int32.Parse(txtBookQuantity.Text);
+
+            #region Check Book Information
+
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                MessageBox.Show("Please enter book's title", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(author))
+            {
+                MessageBox.Show("Please enter book's author", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(publisher))
+            {
+                MessageBox.Show("Please enter book's publisher", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (quantity < 0)
+            {
+                MessageBox.Show("Quantity is not valid", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            #endregion
+
+            if ((new BookF()).Exists(id) == false)
+            {
+                MessageBox.Show("Book is not exists", "", MessageBoxButtons.OK);
+                return;
+            }
+
+            Book model = new Book();
+
+            model.Title = title;
+            model.Author = author;
+            model.Publisher = publisher;
+            model.Quantity = quantity;
+
+            if ((new BookF()).Update(id, model) == true)
+            {
+                MessageBox.Show("Update successfully", "", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Update failed", "", MessageBoxButtons.OK);
+            }
+
+            LoadBookData();
 
         }
 
