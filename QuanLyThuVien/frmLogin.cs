@@ -30,7 +30,26 @@ namespace QuanLyThuVien
                 return;
             }
 
-           
+            if (string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter password", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMatKhau.Focus();
+                return;
+            }
+
+            if ((new LoginF()).Check(username, password))
+            {
+                MessageBox.Show("Login success!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                frmMain main = null;
+                main = new frmMain();
+                this.Hide();
+                main.Show();
+            }
+            else
+            {
+                MessageBox.Show("Login failed!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
