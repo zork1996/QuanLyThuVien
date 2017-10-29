@@ -26,3 +26,17 @@ E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\o
 E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
 E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
 E:\HOC TAP\TREN LOP\KI 5\THUC TAP NHOM\Windows Forms Application\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.dll
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.xml
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csprojResolveAssemblyReference.cache
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmLogin.resources
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.frmMain.resources
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.Cache
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+C:\Users\Zork\Documents\GitHub\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
