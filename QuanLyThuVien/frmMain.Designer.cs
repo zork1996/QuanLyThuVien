@@ -39,11 +39,6 @@ namespace QuanLyThuVien
             this.lblDevider = new System.Windows.Forms.Label();
             this.cbBookSearchBy = new System.Windows.Forms.ComboBox();
             this.dgvBook = new System.Windows.Forms.DataGridView();
-            this.colBookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPublishHouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtBookTitle = new System.Windows.Forms.TextBox();
             this.lblBookTitle = new System.Windows.Forms.Label();
             this.txtBookSearchValue = new System.Windows.Forms.TextBox();
@@ -66,11 +61,6 @@ namespace QuanLyThuVien
             this.label1 = new System.Windows.Forms.Label();
             this.cbReaderSearchBy = new System.Windows.Forms.ComboBox();
             this.dgvReader = new System.Windows.Forms.DataGridView();
-            this.colReaderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colReaderName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colReaderAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colReaderPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colReaderGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtReaderAddress = new System.Windows.Forms.TextBox();
             this.lblReaderAddress = new System.Windows.Forms.Label();
             this.txtReaderSearchValue = new System.Windows.Forms.TextBox();
@@ -90,11 +80,6 @@ namespace QuanLyThuVien
             this.label2 = new System.Windows.Forms.Label();
             this.cbVoucherSearchBy = new System.Windows.Forms.ComboBox();
             this.dgvVoucher = new System.Windows.Forms.DataGridView();
-            this.colVoucherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colBookTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colReader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colQuantityLend = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtVoucherQuantity = new System.Windows.Forms.TextBox();
             this.lblVoucherQuantity = new System.Windows.Forms.Label();
             this.txtVoucherSearchValue = new System.Windows.Forms.TextBox();
@@ -107,6 +92,21 @@ namespace QuanLyThuVien
             this.lblVoucherReaderId = new System.Windows.Forms.Label();
             this.lblVoucherBookId = new System.Windows.Forms.Label();
             this.lblVoucherId = new System.Windows.Forms.Label();
+            this.colBookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAuthor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPublishHouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReaderID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReaderName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReaderAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReaderPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReaderGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colVoucherID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBookTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colReader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colQuantityLend = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl.SuspendLayout();
             this.tabBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBook)).BeginInit();
@@ -225,44 +225,6 @@ namespace QuanLyThuVien
             this.dgvBook.Size = new System.Drawing.Size(685, 262);
             this.dgvBook.TabIndex = 2;
             this.dgvBook.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBook_CellClick);
-            // 
-            // colBookID
-            // 
-            this.colBookID.DataPropertyName = "ID";
-            this.colBookID.HeaderText = "Mã Sách";
-            this.colBookID.Name = "colBookID";
-            this.colBookID.ReadOnly = true;
-            // 
-            // colTitle
-            // 
-            this.colTitle.DataPropertyName = "Title";
-            this.colTitle.HeaderText = "Tiêu Đề";
-            this.colTitle.Name = "colTitle";
-            this.colTitle.ReadOnly = true;
-            this.colTitle.Width = 150;
-            // 
-            // colAuthor
-            // 
-            this.colAuthor.DataPropertyName = "Author";
-            this.colAuthor.HeaderText = "Tác Giả";
-            this.colAuthor.Name = "colAuthor";
-            this.colAuthor.ReadOnly = true;
-            this.colAuthor.Width = 150;
-            // 
-            // colPublishHouse
-            // 
-            this.colPublishHouse.DataPropertyName = "Publisher";
-            this.colPublishHouse.HeaderText = "Nhà Xuất Bản";
-            this.colPublishHouse.Name = "colPublishHouse";
-            this.colPublishHouse.ReadOnly = true;
-            this.colPublishHouse.Width = 150;
-            // 
-            // colQuantity
-            // 
-            this.colQuantity.DataPropertyName = "Quantity";
-            this.colQuantity.HeaderText = "Số Lượng";
-            this.colQuantity.Name = "colQuantity";
-            this.colQuantity.ReadOnly = true;
             // 
             // txtBookTitle
             // 
@@ -493,44 +455,6 @@ namespace QuanLyThuVien
             this.dgvReader.TabIndex = 20;
             this.dgvReader.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReader_CellClick);
             // 
-            // colReaderID
-            // 
-            this.colReaderID.DataPropertyName = "ID";
-            this.colReaderID.HeaderText = "ID";
-            this.colReaderID.Name = "colReaderID";
-            this.colReaderID.ReadOnly = true;
-            // 
-            // colReaderName
-            // 
-            this.colReaderName.DataPropertyName = "Name";
-            this.colReaderName.HeaderText = "Tên";
-            this.colReaderName.Name = "colReaderName";
-            this.colReaderName.ReadOnly = true;
-            this.colReaderName.Width = 150;
-            // 
-            // colReaderAddress
-            // 
-            this.colReaderAddress.DataPropertyName = "Address";
-            this.colReaderAddress.HeaderText = "Địa Chỉ";
-            this.colReaderAddress.Name = "colReaderAddress";
-            this.colReaderAddress.ReadOnly = true;
-            this.colReaderAddress.Width = 190;
-            // 
-            // colReaderPhone
-            // 
-            this.colReaderPhone.DataPropertyName = "Phone";
-            this.colReaderPhone.HeaderText = "Số Điện Thoại";
-            this.colReaderPhone.Name = "colReaderPhone";
-            this.colReaderPhone.ReadOnly = true;
-            this.colReaderPhone.Width = 110;
-            // 
-            // colReaderGender
-            // 
-            this.colReaderGender.DataPropertyName = "Gender";
-            this.colReaderGender.HeaderText = "Giới Tính";
-            this.colReaderGender.Name = "colReaderGender";
-            this.colReaderGender.ReadOnly = true;
-            // 
             // txtReaderAddress
             // 
             this.txtReaderAddress.Location = new System.Drawing.Point(441, 24);
@@ -729,45 +653,6 @@ namespace QuanLyThuVien
             this.dgvVoucher.TabIndex = 20;
             this.dgvVoucher.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvVoucher_CellClick);
             // 
-            // colVoucherID
-            // 
-            this.colVoucherID.DataPropertyName = "ID";
-            this.colVoucherID.HeaderText = "Mã Phiếu";
-            this.colVoucherID.Name = "colVoucherID";
-            this.colVoucherID.ReadOnly = true;
-            // 
-            // colBookTitle
-            // 
-            this.colBookTitle.DataPropertyName = "BookTitle";
-            this.colBookTitle.HeaderText = "Tiêu Đề";
-            this.colBookTitle.Name = "colBookTitle";
-            this.colBookTitle.ReadOnly = true;
-            this.colBookTitle.Width = 170;
-            // 
-            // colReader
-            // 
-            this.colReader.DataPropertyName = "ReaderName";
-            this.colReader.HeaderText = "Người Mượn";
-            this.colReader.Name = "colReader";
-            this.colReader.ReadOnly = true;
-            this.colReader.Width = 170;
-            // 
-            // colQuantityLend
-            // 
-            this.colQuantityLend.DataPropertyName = "Quantity";
-            this.colQuantityLend.HeaderText = "Số Lượng";
-            this.colQuantityLend.Name = "colQuantityLend";
-            this.colQuantityLend.ReadOnly = true;
-            // 
-            // colDate
-            // 
-            this.colDate.DataPropertyName = "Date";
-            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-            this.colDate.DefaultCellStyle = dataGridViewCellStyle1;
-            this.colDate.HeaderText = "Ngày Mượn";
-            this.colDate.Name = "colDate";
-            this.colDate.ReadOnly = true;
-            // 
             // txtVoucherQuantity
             // 
             this.txtVoucherQuantity.Location = new System.Drawing.Point(441, 24);
@@ -869,6 +754,121 @@ namespace QuanLyThuVien
             this.lblVoucherId.TabIndex = 7;
             this.lblVoucherId.Text = "Mã Phiếu";
             // 
+            // colBookID
+            // 
+            this.colBookID.DataPropertyName = "ID";
+            this.colBookID.HeaderText = "Mã Sách";
+            this.colBookID.Name = "colBookID";
+            this.colBookID.ReadOnly = true;
+            // 
+            // colTitle
+            // 
+            this.colTitle.DataPropertyName = "Title";
+            this.colTitle.HeaderText = "Tiêu Đề";
+            this.colTitle.Name = "colTitle";
+            this.colTitle.ReadOnly = true;
+            this.colTitle.Width = 150;
+            // 
+            // colAuthor
+            // 
+            this.colAuthor.DataPropertyName = "Author";
+            this.colAuthor.HeaderText = "Tác Giả";
+            this.colAuthor.Name = "colAuthor";
+            this.colAuthor.ReadOnly = true;
+            this.colAuthor.Width = 150;
+            // 
+            // colPublishHouse
+            // 
+            this.colPublishHouse.DataPropertyName = "Publisher";
+            this.colPublishHouse.HeaderText = "Nhà Xuất Bản";
+            this.colPublishHouse.Name = "colPublishHouse";
+            this.colPublishHouse.ReadOnly = true;
+            this.colPublishHouse.Width = 150;
+            // 
+            // colQuantity
+            // 
+            this.colQuantity.DataPropertyName = "Quantity";
+            this.colQuantity.HeaderText = "Số Lượng";
+            this.colQuantity.Name = "colQuantity";
+            this.colQuantity.ReadOnly = true;
+            // 
+            // colReaderID
+            // 
+            this.colReaderID.DataPropertyName = "ID";
+            this.colReaderID.HeaderText = "ID";
+            this.colReaderID.Name = "colReaderID";
+            this.colReaderID.ReadOnly = true;
+            // 
+            // colReaderName
+            // 
+            this.colReaderName.DataPropertyName = "Name";
+            this.colReaderName.HeaderText = "Tên";
+            this.colReaderName.Name = "colReaderName";
+            this.colReaderName.ReadOnly = true;
+            this.colReaderName.Width = 150;
+            // 
+            // colReaderAddress
+            // 
+            this.colReaderAddress.DataPropertyName = "Address";
+            this.colReaderAddress.HeaderText = "Địa Chỉ";
+            this.colReaderAddress.Name = "colReaderAddress";
+            this.colReaderAddress.ReadOnly = true;
+            this.colReaderAddress.Width = 190;
+            // 
+            // colReaderPhone
+            // 
+            this.colReaderPhone.DataPropertyName = "Phone";
+            this.colReaderPhone.HeaderText = "Số Điện Thoại";
+            this.colReaderPhone.Name = "colReaderPhone";
+            this.colReaderPhone.ReadOnly = true;
+            this.colReaderPhone.Width = 110;
+            // 
+            // colReaderGender
+            // 
+            this.colReaderGender.DataPropertyName = "Gender";
+            this.colReaderGender.HeaderText = "Giới Tính";
+            this.colReaderGender.Name = "colReaderGender";
+            this.colReaderGender.ReadOnly = true;
+            // 
+            // colVoucherID
+            // 
+            this.colVoucherID.DataPropertyName = "ID";
+            this.colVoucherID.HeaderText = "Mã Phiếu";
+            this.colVoucherID.Name = "colVoucherID";
+            this.colVoucherID.ReadOnly = true;
+            // 
+            // colBookTitle
+            // 
+            this.colBookTitle.DataPropertyName = "BookTitle";
+            this.colBookTitle.HeaderText = "Tiêu Đề";
+            this.colBookTitle.Name = "colBookTitle";
+            this.colBookTitle.ReadOnly = true;
+            this.colBookTitle.Width = 170;
+            // 
+            // colReader
+            // 
+            this.colReader.DataPropertyName = "ReaderName";
+            this.colReader.HeaderText = "Người Mượn";
+            this.colReader.Name = "colReader";
+            this.colReader.ReadOnly = true;
+            this.colReader.Width = 170;
+            // 
+            // colQuantityLend
+            // 
+            this.colQuantityLend.DataPropertyName = "Quantity";
+            this.colQuantityLend.HeaderText = "Số Lượng";
+            this.colQuantityLend.Name = "colQuantityLend";
+            this.colQuantityLend.ReadOnly = true;
+            // 
+            // colDate
+            // 
+            this.colDate.DataPropertyName = "Date";
+            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
+            this.colDate.DefaultCellStyle = dataGridViewCellStyle1;
+            this.colDate.HeaderText = "Ngày Mượn";
+            this.colDate.Name = "colDate";
+            this.colDate.ReadOnly = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -877,7 +877,6 @@ namespace QuanLyThuVien
             this.Controls.Add(this.tabControl);
             this.Name = "frmMain";
             this.Text = "LIBRARY MANAGEMENT";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabControl.ResumeLayout(false);
             this.tabBook.ResumeLayout(false);
             this.tabBook.PerformLayout();
