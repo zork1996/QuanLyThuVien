@@ -567,7 +567,11 @@ namespace QuanLyThuVien
         {
             InitializeTabControl();
         }
+        //sua ti
+        private void frmMain_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 
 }
