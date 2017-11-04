@@ -36,5 +36,14 @@ namespace QuanLyThuVien.Functions
             db.SaveChanges();
             return true;
         }
+        //public bool Delete(int id)
+        //{
+        //    db.Vouchers.RemoveRange(db.Vouchers.Where(x => x.ReaderID == id));
+        //    Reader dbEntry = db.Readers.Where(x => x.ID == id).FirstOrDefault();
+        //    db.Readers.Remove(dbEntry);
+        //    db.SaveChanges();
+
+        //    return true;
+        //}
     }
 }
